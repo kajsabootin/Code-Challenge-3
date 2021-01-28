@@ -1,13 +1,180 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+} */
+
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #000;
+  color: #fff;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.tvshow-container {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  background: #000;
+  width: 100%;
+}
+
+ .tvshow-title {
+  position: absolute;
+  top: 80;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  padding: 20px;
+ }
+
+ .tvshow-img {
+  background-color: black;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
+ }
+
+ .tvshow-img a img {
+  width: 100%;
+  position: relative;
+ }
+
+ .tvshow-title h1 {
+  color: #ffffff;
+  display: block;
+  font-size: 13px;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bolder;
+ }
+
+ .tvshow-title p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  color: #ffffff;
+  font-weight: bolder;
+  font-size: 10px;
+ }
+
+ .tvshow-img:hover img {
+  filter: brightness(35%);
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.tvshow-img:hover .tvshow-title {
+  display: block;
+  opacity: 1;
+}
+
+/* Detalis page */
+
+.details-container {
+  position: relative;
+  width: 100%;
+}
+
+.backLink {
+  position: absolute;
+  display: inline-flex;
+  color: #fff;
+  align-items: center;
+  font-weight: 700;
+  text-decoration: none;
+  left: 50px;
+  top: 50px;
+}
+
+.details-background {
+  height: 100vh;
+  display: flex;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.details-summary {
+  display: flex;
+  align-items: flex-end;
+  padding: 50px;
+}
+
+.detalis-div {
+  padding-left: 20px;
+}
+
+.detalis-div h1 {
+  display: block;
+  font-size: 18px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.detalis-div p {
+  display: block;
+  font-size: 12px;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  text-shadow: 4px 5px 3px rgba(0, 0, 0, 0.5);
+}
+
+.details-container img {
+  border: 5px solid #fff;
+  width: 25%;
+}
+
+.comment-container {
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-end; */
+  padding: 50px;
+}
+
+/* a {
+  text-decoration: none;
+} */
+
+@media (min-width: 1025px) {
+  .tvshow-title h1 {
+    font-size: 2em;
+  }
+
+  .tvshow-title p {
+    font-size: 16px;
+  }
+
+  /* Detalis page */
+  .detalis-div h1 {
+    font-size: 25px;
+  }
+
+  .detalis-div .rating {
+    font-size: 20px;
+  }
+
+  .detalis-div p {
+    font-size: 18px;
+  }
 }

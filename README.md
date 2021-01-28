@@ -1,19 +1,15 @@
-# Technigo React Starter App
+# Code Challenge
 
-This app has been generated using `create-react-app`, then cleaned up a little so we have a project with just the elements we need to get started.
+From tjejerkodar
 
-Add components in the `src` folder and use them in `src/app.js` to get started.
+## Create a web app that uses an API
+
+You will choose an API of your own choice but try to find one that you haven't used before. The important thing is that you have a listing page and accompanying detail page with commentary function. It doesn't matter if you list Pokemons or shoes 👞
+
+You should: 
+
+- Fetch a list of items from your API
+- Add the possibility to navigate the items and show details
+- The visitor should be able to comment on the detail pages, as well as delete comments
 
 ## Usage
-
-1. On GitHub, click the 'use this template' button to create a new repo on your account
-1. Clone the new repo to your computer
-1. Install required dependencies with npm: `npm install`
-1. Start the project: `npm start`
-
-Alternatively, if you don't want a new git repo on your account;
-
-1. Download & extract the [latest release](https://github.com/Technigo/react-starter/releases/latest) from GitHub
-1. Open the directory in the terminal: `cd /path/to/react-starter`
-1. Install required dependencies with npm: `npm install`
-1. Start the project: `npm start`
